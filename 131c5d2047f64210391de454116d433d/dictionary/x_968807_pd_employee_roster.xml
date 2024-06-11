@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e02e51e047f64210391de454116d433c" label="Employee Roster" max_length="40" name="x_968807_pd_employee_roster" type="collection">
+        <element choice="1" label="Badge No." max_length="40" name="badge_no" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="600" sequence="0" value="600"/>
+                <element inactive_on_update="false" label="21" sequence="1" value="21"/>
+                <element inactive_on_update="false" label="46" sequence="2" value="46"/>
+                <element inactive_on_update="false" label="100" sequence="3" value="100"/>
+                <element inactive_on_update="false" label="00" sequence="4" value="00"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;var badge = current.badge_no&#13;&#10;&#9;return '1U' + badge;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="3" label="Call Sign" max_length="40" name="call_sign" read_only="true" type="choice" use_dependent_field="true" virtual="true">
+            <choice/>
+        </element>
+        <element label="DOB" max_length="40" name="dob" type="glide_date"/>
+        <element label="Name" max_length="40" name="first_name" reference="sys_user" type="reference"/>
+        <element choice="3" default="Day" label="Shift" max_length="40" name="shift" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Day" sequence="0" value="Day"/>
+                <element inactive_on_update="false" label="Swing" sequence="1" value="Swing"/>
+                <element inactive_on_update="false" label="Night" sequence="2" value="Night"/>
+            </choice>
+        </element>
+        <element choice="1" label="Title" max_length="40" name="title" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Chief of Police" sequence="0" value="Chief of Police"/>
+                <element inactive="true" inactive_on_update="true" label="Police Chief" sequence="0" value="Police Chief"/>
+                <element inactive_on_update="false" label="Police Officer" sequence="1" value="Police Officer"/>
+                <element inactive_on_update="false" label="Police Sergeant" sequence="2" value="Police Sergeant"/>
+                <element inactive_on_update="false" label="Dispatcher" sequence="3" value="Dispatcher"/>
+            </choice>
+        </element>
+    </element>
+</database>
