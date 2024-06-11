@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_968807_pd.supervisor" name="x_968807_pd.supervisor">5f1c5d2047f64210391de454116d43d9</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-06-11 17:19:46</sys_created_on>
+        <sys_id>d71c5d2047f64210391de454116d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5f1c5d2047f64210391de454116d43d9</sys_name>
+        <sys_package display_value="PD" source="x_968807_pd">131c5d2047f64210391de454116d433d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PD">131c5d2047f64210391de454116d433d</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d71c5d2047f64210391de454116d43db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-06-11 17:19:46</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
