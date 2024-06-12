@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f9c62d6c47f64210391de454116d4316" label="Incidents" max_length="40" name="x_968807_pd_incidents" type="collection">
-        <element choice="1" label="Disposition" max_length="40" name="disposition" type="choice">
+        <element choice="3" label="Disposition" max_length="40" name="disposition" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Arrest Made" sequence="0" value="Arrest Made"/>
-                <element inactive="true" inactive_on_update="true" label="Report Taken" sequence="0" value="Report Taken"/>
-                <element inactive_on_update="false" label="Admonished" sequence="1" value="Admonished"/>
-                <element inactive_on_update="false" label="Detained" sequence="2" value="Detained"/>
+                <element inactive_on_update="false" label="Report Taken" sequence="1" value="Report Taken"/>
+                <element inactive_on_update="false" label="Admonished" sequence="2" value="Admonished"/>
+                <element inactive_on_update="false" label="Detained" sequence="3" value="Detained"/>
+                <element inactive_on_update="false" label="Information Only" sequence="4" value="Information Only"/>
+                <element inactive_on_update="false" label="No Police Action" sequence="5" value="No Police Action"/>
             </choice>
         </element>
-        <element choice="1" label="Location" max_length="40" name="location" type="choice">
-            <choice/>
-        </element>
-        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element label="Occured" max_length="40" name="occured" type="calendar_date_time"/>
         <element label="Report" max_length="40" name="report" type="boolean"/>
         <element label="Reported" max_length="40" name="reported" type="calendar_date_time"/>
@@ -29,6 +29,22 @@
             <choice>
                 <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
                 <element inactive_on_update="false" label="Closed" sequence="1" value="Closed"/>
+            </choice>
+        </element>
+        <element choice="3" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Traffic Stop" sequence="0" value="Traffic Stop"/>
+                <element inactive_on_update="false" label="Alarm Call" sequence="1" value="Alarm Call"/>
+                <element inactive_on_update="false" label="Burglary" sequence="2" value="Burglary"/>
+                <element inactive_on_update="false" label="Theft" sequence="3" value="Theft"/>
+                <element inactive_on_update="false" label="Suspicious Occurrence" sequence="4" value="Suspicious Occurrence"/>
+                <element inactive_on_update="false" label="Hit and Run" sequence="5" value="Hit and Run"/>
+                <element inactive_on_update="false" label="Welfare Check" sequence="6" value="Welfare Check"/>
+                <element inactive_on_update="false" label="Noise Complaint" sequence="7" value="Noise Complaint"/>
+                <element inactive_on_update="false" label="Parking" sequence="8" value="Parking"/>
+                <element inactive_on_update="false" label="Assault" sequence="9" value="Assault"/>
+                <element inactive_on_update="false" label="Information Only" sequence="10" value="Information Only"/>
+                <element inactive_on_update="false" label="Homeless" sequence="11" value="Homeless"/>
             </choice>
         </element>
         <element choice="1" choice_field="badge_no" choice_table="x_968807_pd_employee_roster" label="Units Assigned" max_length="40" name="units_assigned" type="choice">
