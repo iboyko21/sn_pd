@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="f9c62d6c47f64210391de454116d4316" label="Incidents" max_length="40" name="x_968807_pd_incidents" type="collection">
-        <element choice="3" label="Disposition" max_length="40" name="disposition" type="choice">
+        <element choice="3" label="Disposition" max_length="40" name="disposition" type="choice" use_dependent_field="true">
             <choice>
                 <element inactive_on_update="false" label="Arrest Made" sequence="0" value="Arrest Made"/>
                 <element inactive_on_update="false" label="Report Taken" sequence="1" value="Report Taken"/>
@@ -12,6 +12,7 @@
                 <element inactive_on_update="false" label="Assisted" sequence="7" value="Assisted"/>
                 <element inactive_on_update="false" label="Refer Other Agency" sequence="8" value="Refer Other Agency"/>
                 <element inactive_on_update="false" label="Transported" sequence="9" value="Transported"/>
+                <element inactive_on_update="false" label="Checks Ok" sequence="10" value="Checks Ok"/>
             </choice>
         </element>
         <element label="Location" max_length="40" name="location" type="string"/>
@@ -19,6 +20,7 @@
         <element label="Report" max_length="40" name="report" type="boolean"/>
         <element label="Reported" max_length="40" name="reported" type="calendar_date_time"/>
         <element label="Reportee" max_length="40" name="reportee" type="string"/>
+        <element label="Report Number" max_length="32" name="report_number" reference="x_968807_pd_reports" type="reference"/>
         <element choice="1" label="Source" max_length="40" name="source" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Phone" sequence="0" value="Phone"/>
@@ -28,7 +30,7 @@
                 <element inactive_on_update="false" label="Anonymous" sequence="4" value="Anonymous"/>
             </choice>
         </element>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
+        <element choice="3" default="Open" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
                 <element inactive_on_update="false" label="Closed" sequence="1" value="Closed"/>
@@ -40,18 +42,22 @@
                 <element inactive_on_update="false" label="Alarm Call" sequence="1" value="Alarm Call"/>
                 <element inactive_on_update="false" label="Burglary" sequence="2" value="Burglary"/>
                 <element inactive_on_update="false" label="Theft" sequence="3" value="Theft"/>
-                <element inactive_on_update="false" label="Suspicious Occurrence" sequence="4" value="Suspicious Occurrence"/>
-                <element inactive_on_update="false" label="Hit and Run" sequence="5" value="Hit and Run"/>
-                <element inactive_on_update="false" label="Welfare Check" sequence="6" value="Welfare Check"/>
-                <element inactive_on_update="false" label="Noise Complaint" sequence="7" value="Noise Complaint"/>
-                <element inactive_on_update="false" label="Parking" sequence="8" value="Parking"/>
-                <element inactive_on_update="false" label="Assault" sequence="9" value="Assault"/>
-                <element inactive_on_update="false" label="Information Only" sequence="10" value="Information Only"/>
+                <element inactive_on_update="false" label="Assault" sequence="4" value="Assault"/>
+                <element inactive_on_update="false" label="Suspicious Occurrence" sequence="5" value="Suspicious Occurrence"/>
+                <element inactive_on_update="false" label="Hit and Run" sequence="6" value="Hit and Run"/>
+                <element inactive_on_update="false" label="Welfare Check" sequence="7" value="Welfare Check"/>
+                <element inactive_on_update="false" label="Noise Complaint" sequence="8" value="Noise Complaint"/>
+                <element inactive_on_update="false" label="Parking" sequence="9" value="Parking"/>
+                <element inactive_on_update="false" label="Medical" sequence="10" value="Medical"/>
                 <element inactive_on_update="false" label="Homeless" sequence="11" value="Homeless"/>
+                <element inactive_on_update="false" label="Information Only" sequence="12" value="Information Only"/>
             </choice>
         </element>
-        <element choice="1" choice_field="badge_no" choice_table="x_968807_pd_employee_roster" label="Units Assigned" max_length="40" name="units_assigned" type="choice">
+        <element choice="1" choice_field="badge_no" choice_table="x_968807_pd_employee_roster" label="Units Assigned" max_length="40" name="units_assigned" type="glide_list">
             <choice/>
         </element>
+        <index name="index">
+            <element name="report_number"/>
+        </index>
     </element>
 </database>

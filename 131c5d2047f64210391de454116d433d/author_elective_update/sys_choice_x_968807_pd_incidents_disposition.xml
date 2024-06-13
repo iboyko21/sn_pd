@@ -205,5 +205,24 @@
             <sys_updated_on>2024-06-12 22:04:13</sys_updated_on>
             <value>Transported</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Checks Ok</label>
+            <language>en</language>
+            <name>x_968807_pd_incidents</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-13 19:56:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-13 19:56:53</sys_updated_on>
+            <value>Checks Ok</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

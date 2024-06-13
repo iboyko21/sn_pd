@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e02e51e047f64210391de454116d433c" label="Employee Roster" max_length="40" name="x_968807_pd_employee_roster" type="collection">
-        <element choice="1" label="Badge No." max_length="40" name="badge_no" type="choice">
+        <element choice="1" display="true" label="Badge No." max_length="40" name="badge_no" type="choice">
             <choice>
                 <element inactive_on_update="false" label="600" sequence="0" value="600"/>
                 <element inactive_on_update="false" label="21" sequence="1" value="21"/>
@@ -19,6 +19,12 @@
                 <element inactive_on_update="false" label="Day" sequence="0" value="Day"/>
                 <element inactive_on_update="false" label="Swing" sequence="1" value="Swing"/>
                 <element inactive_on_update="false" label="Night" sequence="2" value="Night"/>
+            </choice>
+        </element>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="On Duty" sequence="0" value="On Duty"/>
+                <element inactive_on_update="false" label="Off Duty" sequence="1" value="Off Duty"/>
             </choice>
         </element>
         <element choice="1" label="Title" max_length="40" name="title" type="choice">

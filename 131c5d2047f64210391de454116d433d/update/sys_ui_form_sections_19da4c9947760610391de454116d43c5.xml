@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="19da4c9947760610391de454116d43c5" sys_domain="global" table="x_968807_pd_incidents" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-13 19:20:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1da4c9947760610391de454116d43c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_968807_pd_incidents" name="x_968807_pd_incidents" sys_domain="global" view="Default view">19da4c9947760610391de454116d43c5</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_968807_pd_incidents" sys_domain="global" view="Default view">8ec6a52c47f64210391de454116d43e1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-13 19:20:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-13 19:20:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61da4c9947760610391de454116d43ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_968807_pd_incidents" name="x_968807_pd_incidents" sys_domain="global" view="Default view">19da4c9947760610391de454116d43c5</sys_ui_form>
+            <sys_ui_section caption="Additional Details" display_value="Additional Details" name="x_968807_pd_incidents" sys_domain="global" view="Default view">ddda4c9947760610391de454116d43c3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-13 19:20:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_968807_pd_incidents</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-06-13 19:20:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>19da4c9947760610391de454116d43c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_968807_pd_incidents</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="PD" source="x_968807_pd">131c5d2047f64210391de454116d433d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PD">131c5d2047f64210391de454116d433d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_19da4c9947760610391de454116d43c5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-06-13 19:20:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
