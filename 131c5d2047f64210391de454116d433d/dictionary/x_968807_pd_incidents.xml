@@ -8,11 +8,14 @@
                 <element inactive_on_update="false" label="Detained" sequence="3" value="Detained"/>
                 <element inactive_on_update="false" label="Information Only" sequence="4" value="Information Only"/>
                 <element inactive_on_update="false" label="No Police Action" sequence="5" value="No Police Action"/>
+                <element inactive_on_update="false" label="Unable to Locate" sequence="6" value="Unable to Locate"/>
+                <element inactive_on_update="false" label="Assisted" sequence="7" value="Assisted"/>
+                <element inactive_on_update="false" label="Refer Other Agency" sequence="8" value="Refer Other Agency"/>
+                <element inactive_on_update="false" label="Transported" sequence="9" value="Transported"/>
             </choice>
         </element>
         <element label="Location" max_length="40" name="location" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Occured" max_length="40" name="occured" type="calendar_date_time"/>
         <element label="Report" max_length="40" name="report" type="boolean"/>
         <element label="Reported" max_length="40" name="reported" type="calendar_date_time"/>
         <element label="Reportee" max_length="40" name="reportee" type="string"/>
