@@ -12,9 +12,11 @@
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice/>
         </element>
+        <element label="Suspect" max_length="40" name="suspect" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice/>
         </element>
+        <element label="Victim" max_length="40" name="victim" type="string"/>
         <index name="index">
             <element name="assigned_to"/>
         </index>
